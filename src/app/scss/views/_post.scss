@@ -1,0 +1,11 @@
+.post {
+
+    &__img {
+        width: 100%;
+        height: 40rem;
+        background-image: url('https://picsum.photos/970/400');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
