@@ -1,40 +1,8 @@
 .header {
-    height: 50rem;
+  
 
-    &__nav {
-        height: 10rem;
-        background-color: #fff;
-        box-shadow: none;
-    }
-
-    &__logo {
-        height: 10rem;
-        left: 15%;
-
-        img {
-            width: 5.2rem;
-        }
-    }
-
-    &__menu {
-        height: 10rem;
-
-        a {
-            color: gray;
-        }
-    }
-
-    &__hero {
-        width: 100%;
-        height: 40rem;
-        background-image: url('../../img/Banner.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-
-    &--signin {
-        height: 35rem;
-    }
+  &__logo {
+    width: 64px;
+    height: 64px;
+  }
 }

@@ -4,18 +4,15 @@
 
 
 // helpers
-// @import "helpers/utilities"; 
+@import "helpers/utilities"; 
 // @import "helpers/mixins"; 
 // @import "helpers/animations"; 
 
 // components
 @import "components/buttons"; 
-@import "components/search"; 
+@import "components/hero"; 
 
 // layout
-@import "layout/header";
-@import "layout/footer";
+@import "layout/header"
 
 // views
-@import "views/post";
-@import "views/signin";
