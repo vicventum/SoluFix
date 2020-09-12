@@ -542,7 +542,7 @@ html {
 }
 
 .hero {
-  height: 100vh;
+  height: 92.3vh;
   width: 100vw;
   -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
@@ -580,6 +580,24 @@ html {
 }
 .hero__text {
   margin: 0 auto;
+}
+
+.about {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img2.jpg);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img2.jpg);
+  background-position: left 15px center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+.about__title {
+  font-weight: bold;
+}
+
+.clip-arts {
+  padding-top: 25px;
 }
 
 .header__logo {
