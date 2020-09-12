@@ -600,6 +600,10 @@ html {
   padding-top: 25px;
 }
 
+.carousel--img {
+  margin-top: 30px;
+}
+
 .header__logo {
   width: 64px;
   height: 64px;
