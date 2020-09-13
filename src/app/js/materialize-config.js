@@ -18,7 +18,7 @@ M.Carousel.init(carouselSlider, {
 const slider = document.getElementById('slider')
 M.Slider.init(slider, {
   indicators: true,
-  height: 220,
+  height: 200,
   transition: 500,
   interval: 6000
 })

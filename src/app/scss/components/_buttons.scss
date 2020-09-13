@@ -1,5 +1,12 @@
 .btn {
+  background-color: #ff1744;
+
+  &:hover {
+    background-color: black;
+  }
+
   &__rounded {
     border-radius: 50px;
   }
+
 }

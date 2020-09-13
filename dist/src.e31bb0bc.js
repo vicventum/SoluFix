@@ -6367,7 +6367,7 @@ M.Carousel.init(carouselSlider, {
 var slider = document.getElementById('slider');
 M.Slider.init(slider, {
   indicators: true,
-  height: 220,
+  height: 200,
   transition: 500,
   interval: 6000
 });
@@ -6413,7 +6413,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55868" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64822" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
