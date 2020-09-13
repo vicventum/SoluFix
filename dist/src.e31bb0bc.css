@@ -638,7 +638,10 @@ img {
   margin: 20px;
 }
 .services__img {
-  margin: 60% !important;
+  max-height: 70% !important;
+}
+.services .card.small .card-image + .card-content, .services .card.medium .card-image + .card-content, .services .card.large .card-image + .card-content {
+  min-height: 20%;
 }
 
 .carousel--img {
@@ -655,13 +658,13 @@ img {
   }
 }
 
-.testimonials {
-  margin-top: -80px;
+.testimonial {
+  margin-top: -40px;
 }
-.testimonials .intro__title {
-  font-weight: bold;
+.testimonial .intro__title {
+  font-weight: bold !important;
 }
-.testimonials .intro__desc {
+.testimonial .intro__desc {
   margin: 20px;
 }
 
