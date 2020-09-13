@@ -8,10 +8,7 @@
     --size: 0;
     width: calc((200 + var(--size)) * 1px )!important;
     margin-top: calc(-0.5px * var(--size)) !important;
-    
-    img {
-      // min-width: 450px;
-    }
+   
 
     @include media('>=tablet') {
       --size: 150;

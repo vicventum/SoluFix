@@ -1,0 +1,49 @@
+.slider {
+
+  &__container {
+    background-color: transparent !important;
+  }
+
+  &__slide-content {
+    text-align: center !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    font-style: italic;
+
+    position: relative;
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    
+    .blockquote {
+
+
+      &__text {
+        padding-left: 20px;
+        quotes: '\201C' '\201D';
+
+        &::before, &::after {
+          font-family: sans-serif; 
+          font-weight: bold;
+          font-size: 1.3em;
+        }
+        &::before {
+          content: open-quote;
+        }
+        &::after {
+          // content: '”';
+          content: close-quote;
+        }
+      }
+    } 
+  }
+
+  .indicators {
+
+    .active {
+      background-color: rgb(255, 105, 92) !important;
+    }
+  }
+
+}

@@ -6351,31 +6351,25 @@ M.anime = function () {
   M.Range = t, M.jQueryLoaded && M.initializeJqueryWrapper(t, "range", "M_Range"), t.init(s("input[type=range]"));
 }(cash, M.anime);
 },{"@babel/runtime/helpers/typeof":"../node_modules/@babel/runtime/helpers/typeof.js"}],"app/js/materialize-config.js":[function(require,module,exports) {
-M.AutoInit();
-var carouselImg = document.querySelectorAll('.carouselImg');
+M.AutoInit(); // Carousel Img
+
+var carouselImg = document.getElementById('carouselImg');
 M.Carousel.init(carouselImg, {
   height: 510
+}); // Carousel Slider
+
+var carouselSlider = document.getElementById('carouselSlider');
+M.Carousel.init(carouselSlider, {
+  indicators: true,
+  fullWidth: true
 }); // Slider
 
-var slider = document.querySelector('.slider');
+var slider = document.getElementById('slider');
 M.Slider.init(slider, {
-  indicators: false,
-  height: 510,
+  indicators: true,
+  height: 220,
   transition: 500,
   interval: 6000
-}); // Autocomplete
-
-var ac = document.querySelector('.autocomplete');
-M.Autocomplete.init(ac, {
-  data: {
-    'Aruba': null,
-    'Cancun Mexico': null,
-    'Hawaii': null,
-    'Florida': null,
-    'California': null,
-    'Jamaica': null,
-    'Islas Las Palmas': null
-  }
 });
 },{}],"app/js/app.js":[function(require,module,exports) {
 

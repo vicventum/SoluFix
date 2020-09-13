@@ -1,31 +1,24 @@
 M.AutoInit()
 
-
-const carouselImg = document.querySelectorAll('.carouselImg');
+// Carousel Img
+const carouselImg = document.getElementById('carouselImg');
 M.Carousel.init(carouselImg, {
   height: 510,
 })
 
 
-// Slider
-const slider = document.querySelector('.slider')
-M.Slider.init(slider, {
-  indicators: false,
-  height: 510,
-  transition: 500,
-  interval: 6000
+// Carousel Slider
+const carouselSlider = document.getElementById('carouselSlider')
+M.Carousel.init(carouselSlider, {
+  indicators: true,
+  fullWidth: true
 })
 
-// Autocomplete
-const ac = document.querySelector('.autocomplete')
-M.Autocomplete.init(ac, {
-  data: {
-    'Aruba': null,
-    'Cancun Mexico': null,
-    'Hawaii': null,
-    'Florida': null,
-    'California': null,
-    'Jamaica': null,
-    'Islas Las Palmas': null
-  }
+// Slider
+const slider = document.getElementById('slider')
+M.Slider.init(slider, {
+  indicators: true,
+  height: 220,
+  transition: 500,
+  interval: 6000
 })
