@@ -1,0 +1,18 @@
+.blog {
+
+  &__title {
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      // color: darken($color: white, $amount: 30%);
+    }
+  }
+
+  &__img {
+    filter: brightness(30%);
+  }
+
+  &__content {
+    margin-bottom: 5px;
+  }
+}

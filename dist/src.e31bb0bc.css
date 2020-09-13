@@ -30,6 +30,11 @@ img {
   height: auto;
 }
 
+.cards .card {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .m-mall-0 {
   margin: 0px;
 }
@@ -78,7 +83,7 @@ img {
 .m-mall-5 {
   margin: 5px;
 }
-.m-ma-ll-5 {
+.m-mall--5 {
   margin: -5px;
 }
 .m-ml-5 {
@@ -168,7 +173,7 @@ img {
 .m-mall-15 {
   margin: 15px;
 }
-.m-ma-ll-15 {
+.m-mall--15 {
   margin: -15px;
 }
 .m-ml-15 {
@@ -258,7 +263,7 @@ img {
 .m-mall-25 {
   margin: 25px;
 }
-.m-ma-ll-25 {
+.m-mall--25 {
   margin: -25px;
 }
 .m-ml-25 {
@@ -348,7 +353,7 @@ img {
 .m-mall-35 {
   margin: 35px;
 }
-.m-ma-ll-35 {
+.m-mall--35 {
   margin: -35px;
 }
 .m-ml-35 {
@@ -438,7 +443,7 @@ img {
 .m-mall-45 {
   margin: 45px;
 }
-.m-ma-ll-45 {
+.m-mall--45 {
   margin: -45px;
 }
 .m-ml-45 {
@@ -553,6 +558,16 @@ img {
 .btn__rounded {
   border-radius: 50px;
 }
+.btn__blog {
+  display: inline-block;
+  padding: 0.4em;
+  margin-top: 1em;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 .hero {
   height: 92.3vh;
@@ -611,6 +626,19 @@ img {
 
 .clip-arts {
   padding-top: 25px;
+}
+
+.services .intro {
+  padding-top: 25px;
+}
+.services .intro__title {
+  font-weight: bold;
+}
+.services .intro__desc {
+  margin: 20px;
+}
+.services__img {
+  margin: 60% !important;
 }
 
 .carousel--img {
@@ -682,6 +710,19 @@ img {
 }
 .some__subtitle {
   font-weight: 800;
+}
+
+.blog__title {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.blog__img {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+.blog__content {
+  margin-bottom: 5px;
 }
 
 .header__logo {
