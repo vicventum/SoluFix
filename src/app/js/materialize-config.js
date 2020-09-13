@@ -1,5 +1,12 @@
 M.AutoInit()
 
+
+const carouselImg = document.querySelectorAll('.carouselImg');
+M.Carousel.init(carouselImg, {
+  height: 510,
+})
+
+
 // Slider
 const slider = document.querySelector('.slider')
 M.Slider.init(slider, {

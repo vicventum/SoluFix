@@ -1,0 +1,14 @@
+.testimonials {
+  margin-top: -80px;
+
+  .intro {
+
+    &__title {
+      font-weight: bold
+    }
+
+    &__desc {
+      margin: 20px;
+    }
+  }
+}

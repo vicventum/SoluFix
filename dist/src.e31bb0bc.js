@@ -6351,7 +6351,11 @@ M.anime = function () {
   M.Range = t, M.jQueryLoaded && M.initializeJqueryWrapper(t, "range", "M_Range"), t.init(s("input[type=range]"));
 }(cash, M.anime);
 },{"@babel/runtime/helpers/typeof":"../node_modules/@babel/runtime/helpers/typeof.js"}],"app/js/materialize-config.js":[function(require,module,exports) {
-M.AutoInit(); // Slider
+M.AutoInit();
+var carouselImg = document.querySelectorAll('.carouselImg');
+M.Carousel.init(carouselImg, {
+  height: 510
+}); // Slider
 
 var slider = document.querySelector('.slider');
 M.Slider.init(slider, {

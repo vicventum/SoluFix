@@ -23,6 +23,12 @@ html {
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
 .m-mall-0 {
   margin: 0px;
 }
@@ -602,6 +608,26 @@ html {
 
 .carousel--img {
   margin-top: 30px;
+}
+.carousel-item {
+  --size: 0;
+  width: calc((200 + var(--size)) * 1px ) !important;
+  margin-top: calc(-0.5px * var(--size)) !important;
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    --size: 150;
+  }
+}
+
+.testimonials {
+  margin-top: -80px;
+}
+.testimonials .intro__title {
+  font-weight: bold;
+}
+.testimonials .intro__desc {
+  margin: 20px;
 }
 
 .header__logo {

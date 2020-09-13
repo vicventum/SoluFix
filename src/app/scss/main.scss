@@ -1,3 +1,6 @@
+// vendor
+@import "../../../node_modules/include-media/dist/include-media";
+
 // config
 @import "config/variables";
 @import "config/reset"; 
@@ -13,7 +16,8 @@
 @import "components/hero"; 
 @import "components/about"; 
 @import "components/clip-arts"; 
-@import "components/carousels"; 
+@import "components/carousel"; 
+@import "components/testimonials"; 
 
 // layout
 @import "layout/header"
