@@ -1,0 +1,24 @@
+.footer {
+
+
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    font-size : 30px;
+  }
+
+  &__link {
+    color: white;
+
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
