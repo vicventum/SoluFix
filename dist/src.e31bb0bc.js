@@ -194,7 +194,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/@babel/runtime/helpers/typeof.js":[function(require,module,exports) {
+},{"./..\\..\\assets\\img\\hero-bg.jpg":[["hero-bg.27531da2.jpg","assets/img/hero-bg.jpg"],"assets/img/hero-bg.jpg"],"./..\\..\\assets\\img\\about-bg.webp":[["about-bg.5ee90485.webp","assets/img/about-bg.webp"],"assets/img/about-bg.webp"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/@babel/runtime/helpers/typeof.js":[function(require,module,exports) {
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
@@ -6370,6 +6370,12 @@ M.Slider.init(slider, {
   height: 200,
   transition: 500,
   interval: 6000
+}); // Scrollspy
+
+var scrollspy = document.querySelectorAll('.scrollspy');
+M.ScrollSpy.init(scrollspy, {
+  throttle: 200,
+  scrollOffset: 0
 });
 },{}],"app/js/app.js":[function(require,module,exports) {
 
@@ -6413,7 +6419,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50586" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50217" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,8 +1,5 @@
 // Importar tipografia
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400,700&display=swap');
-// Importar iconos
-@import url("https://file.myfontastic.com/CtJ7M0B6DyxJKbZveWPadP/icons.css");
-
 /********************* RESET *********************/
 html {
     box-sizing: border-box;
@@ -13,32 +10,6 @@ html {
     // font-size: 62.5%;
     // scroll-behavior: smooth;
 }
-
-body {
-    // font-size: 1.6rem;
-    // display: flex;
-    // flex-direction: column;
-    // min-height: 100vh;
-}
-
-ul {
-    // list-style: none;
-    // padding-left: 0;
-    // margin-top: 0;
-    // margin-bottom: 0;
-}
-
-a,
-input,
-span {
-    // font-size: 1.6rem!important;
-}
-
-label {
-    // font-size: 1.2rem!important;
-}
-
-
 
 .cards .card {
     border-bottom-left-radius: 20px;

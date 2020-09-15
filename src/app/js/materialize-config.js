@@ -22,3 +22,10 @@ M.Slider.init(slider, {
   transition: 500,
   interval: 6000
 })
+
+// Scrollspy
+const scrollspy = document.querySelectorAll('.scrollspy')
+M.ScrollSpy.init(scrollspy, {
+  throttle: 200,
+  scrollOffset: 0
+})

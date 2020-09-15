@@ -8,13 +8,13 @@
     width: 100vw;
   
     background-color: #f6f7f7;
-    background-image: url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img1.jpg);
+    background-image: url(../../assets/img/hero-bg.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  height: 92.3vh;
+  height: 100vh;
   width: 100vw;
   
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -23,7 +23,7 @@
     width: 80%;
     height: 100%;
     margin: 0 10%;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
     
 
     display: flex;

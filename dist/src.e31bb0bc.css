@@ -14,7 +14,6 @@
 
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400,700&display=swap");
-@import url("https://file.myfontastic.com/CtJ7M0B6DyxJKbZveWPadP/icons.css");
 :root {
   --primary-color: #ff1744;
 }
@@ -568,7 +567,7 @@ html {
 }
 
 .hero {
-  height: 92.3vh;
+  height: 100vh;
   width: 100vw;
   -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
@@ -583,7 +582,7 @@ html {
   height: 100vh;
   width: 100vw;
   background-color: #f6f7f7;
-  background-image: url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img1.jpg);
+  background-image: url(/hero-bg.27531da2.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -592,7 +591,7 @@ html {
   width: 80%;
   height: 100%;
   margin: 0 10%;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,10 +614,10 @@ html {
 
 .about {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img2.jpg);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img2.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img2.jpg);
-  background-position: left 15px center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(/about-bg.5ee90485.webp);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/about-bg.5ee90485.webp);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/about-bg.5ee90485.webp);
+  background-position: left center;
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-blend-mode: lighten;
@@ -642,6 +641,9 @@ html {
 }
 .services__img {
   max-height: 70% !important;
+}
+.services .card.small {
+  height: 260px;
 }
 .services .card.small .card-image + .card-content, .services .card.medium .card-image + .card-content, .services .card.large .card-image + .card-content {
   min-height: 20%;
@@ -676,11 +678,22 @@ html {
 .slider__container {
   background-color: transparent !important;
 }
+@media (max-width: 767px) {
+  .slider__container {
+    height: 225px !important;
+    margin-top: 25px;
+  }
+}
 .slider__slide-content {
   text-align: center !important;
   color: rgba(0, 0, 0, 0.87) !important;
   font-style: italic;
   position: relative;
+}
+@media (max-width: 767px) {
+  .slider__slide-content {
+    margin-top: -31px;
+  }
 }
 .slider__slide-content h2 {
   margin-top: 10px;
@@ -702,6 +715,11 @@ html {
 }
 .slider .indicators .active {
   background-color: #ff695c !important;
+}
+@media (max-width: 767px) {
+  .slider .indicators {
+    bottom: -15px;
+  }
 }
 
 .some {
@@ -752,6 +770,9 @@ html {
   margin-bottom: 5px;
 }
 
+.header nav {
+  position: absolute;
+}
 .header__logo {
   --size: 40px;
   width: var(--size);
