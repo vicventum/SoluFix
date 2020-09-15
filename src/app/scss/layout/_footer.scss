@@ -9,16 +9,20 @@
   }
 
   &__link {
-    color: white;
+    
 
-    transition: color .2s ease-in-out;
-
-    &:hover {
-      color: var(--primary-color);
-    }
-
+    
     &:not(:last-child) {
       margin-right: 1em;
+    }
+    
+    a {
+      color: white;
+      transition: color .2s ease-in-out;
+  
+      &:hover {
+        color: var(--primary-color);
+      }
     }
   }
 }

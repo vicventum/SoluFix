@@ -2,7 +2,28 @@
   
 
   &__logo {
-    width: 64px;
-    height: 64px;
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    filter: invert(1);
+
+    margin-top: 9px;
+
+    @include media('>=tablet') {
+      --size: 57px;
+      margin-top: 4px;
+    }
+  }
+
+  .sidenav {
+    background-color: var(--primary-color);
+    
+    li {
+      border-bottom: 1px solid darken($color: $primary-color, $amount: 10%)!important;
+    }
+    
+    a {
+      color: white;
+    }
   }
 }

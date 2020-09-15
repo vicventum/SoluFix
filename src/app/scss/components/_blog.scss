@@ -1,15 +1,23 @@
 .blog {
+  .intro {
 
-  &__title {
-    transition: color .3s ease-in-out;
-
-    &:hover {
-      // color: darken($color: white, $amount: 30%);
+    &__title {
+      font-weight: bold;
     }
   }
 
+  .card-image {
+
+    overflow: hidden;
+  }
+
   &__img {
-    filter: brightness(30%);
+    filter: brightness(20%) blur(2px);
+    transition: filter .3s ease-in-out;
+
+    .card:hover & {
+      filter: brightness(40%) blur(0);
+    }
   }
 
   &__content {
