@@ -671,6 +671,12 @@ html {
 .testimonial .intro__title {
   font-weight: bold !important;
 }
+@media (max-width: 419px) {
+  .testimonial .intro__title {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
 .testimonial .intro__desc {
   margin: 20px;
 }
@@ -762,9 +768,11 @@ html {
   transition: filter 0.3s ease-in-out;
   transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
-.card:hover .blog__img {
-  -webkit-filter: brightness(40%) blur(0);
-          filter: brightness(40%) blur(0);
+@media (min-width: 768px) {
+  .card:hover .blog__img {
+    -webkit-filter: brightness(40%) blur(0);
+            filter: brightness(40%) blur(0);
+  }
 }
 .blog__content {
   margin-bottom: 5px;

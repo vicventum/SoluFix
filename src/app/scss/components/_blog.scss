@@ -15,8 +15,11 @@
     filter: brightness(20%) blur(2px);
     transition: filter .3s ease-in-out;
 
-    .card:hover & {
-      filter: brightness(40%) blur(0);
+    @include media('>=tablet') {
+      
+      .card:hover & {
+        filter: brightness(40%) blur(0);
+      }
     }
   }
 
