@@ -25,4 +25,17 @@
       }
     }
   }
+
+  &__copyright a {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    
+    transition: border-bottom-color .2s ease;
+    &:hover {
+      border-bottom-color: var(--primary-color);
+    }
+  }
 }

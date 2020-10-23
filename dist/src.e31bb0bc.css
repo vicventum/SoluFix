@@ -13090,8 +13090,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   border: 0;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
 }
 
 .hero {
@@ -13104,6 +13103,8 @@ body::-webkit-scrollbar-thumb {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 .hero-background {
+  -webkit-filter: brightness(1.2) contrast(1.1);
+          filter: brightness(1.2) contrast(1.1);
   position: absolute;
   z-index: -99999;
   top: 0;
@@ -13114,12 +13115,6 @@ body::-webkit-scrollbar-thumb {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (min-width: 768px) {
-  .hero-background {
-    -webkit-filter: brightness(1.2) contrast(1.2);
-            filter: brightness(1.2) contrast(1.2);
-  }
 }
 .hero__container {
   width: 80%;
@@ -13218,6 +13213,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 30px;
 }
 .carousel-item {
+  cursor: pointer;
   --size: 50;
   width: calc((200 + var(--size)) * 1px ) !important;
   margin-top: calc(-0.5px * var(--size)) !important;
@@ -13330,10 +13326,15 @@ body::-webkit-scrollbar-thumb {
 .some__subtitle {
   font-weight: 800;
 }
+.some .btn {
+  background-color: black;
+}
+.some .btn:hover {
+  background-color: var(--primary-color);
+}
 @media (max-width: 767px) {
   .some .btn {
-    margin-top: 20px;
-    background-color: #e3002c;
+    margin-top: 15px;
   }
 }
 
@@ -13370,6 +13371,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-transition: top 0.5s, background-color 0.5s;
   -o-transition: top 0.5s, background-color 0.5s;
   transition: top 0.5s, background-color 0.5s;
+  font-weight: bold;
 }
 .header__logo {
   --size: 40px;
@@ -13440,6 +13442,19 @@ body::-webkit-scrollbar-thumb {
 }
 .footer__link a:hover {
   color: var(--primary-color);
+}
+.footer__copyright a {
+  color: var(--primary-color);
+  font-weight: bold;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  -webkit-transition: border-bottom-color 0.2s ease;
+  -o-transition: border-bottom-color 0.2s ease;
+  transition: border-bottom-color 0.2s ease;
+}
+.footer__copyright a:hover {
+  border-bottom-color: var(--primary-color);
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

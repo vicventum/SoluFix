@@ -7,9 +7,7 @@
     z-index: 100;
     transition: top 0.5s, background-color .5s;
 
-    @include media('>=tablet') {
-      // position: absolute;
-    }
+    font-weight: bold;
   }
 
   &__logo {
