@@ -13172,7 +13172,7 @@ body::-webkit-scrollbar-thumb {
   max-height: 70% !important;
 }
 .services .card.small {
-  height: 210px;
+  height: 220px;
 }
 .services .card.small .card-image + .card-content, .services .card.medium .card-image + .card-content, .services .card.large .card-image + .card-content {
   min-height: 20%;
@@ -13312,7 +13312,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 768px) {
   .some {
-    background-image: url(https://ld-wp.template-help.com/monstroid1/prod-6530/wp-content/uploads/2017/09/img3.jpg);
+    background-image: url(/where-bg.fcba438b.jpg);
     background-position: top center;
     background-size: auto 100%;
     background-repeat: no-repeat;
