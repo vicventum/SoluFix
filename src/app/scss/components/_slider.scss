@@ -10,6 +10,21 @@
     }
   }
 
+  .slides li {
+    --size: 25%;
+    width: calc(125% + var(--size));
+    height: 300px;
+    margin-left: calc(var(--size) * -1);
+
+    blockquote {
+      padding-right: 1.5rem;
+    }
+
+    @include media('>=tablet') {
+      height: 250px;
+    }
+  }
+
   &__slide-content {
     text-align: center !important;
     color: rgba(0, 0, 0, 0.87) !important;
@@ -54,9 +69,11 @@
     .active {
       background-color: rgb(255, 105, 92) !important;
     }
+    position: relative;
+    z-index: 100;
 
     @include media('<tablet') {
-      bottom: -30px;
+      bottom: -20px;
     }
   }
 
