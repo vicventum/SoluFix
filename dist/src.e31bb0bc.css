@@ -27,6 +27,26 @@ html {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  --scrollbarBG: transparent;
+  --thumbBG: var(--primary-color);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
 }
 
 .m-mall-0 {
@@ -655,7 +675,22 @@ html {
 .services .card-reveal {
   padding-top: 1rem;
   padding-bottom: 0;
-  scrollbar-base-color: red;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color);
+}
+.services .card-reveal::-webkit-scrollbar {
+  width: 5px;
+}
+.services .card-reveal::-webkit-scrollbar-thumb {
+  background: #ad2020;
+  border-radius: 4px;
+}
+.services .card-reveal::-webkit-scrollbar-track {
+  background: transparent;
+  position: absolute;
+}
+.services .card-reveal::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
 }
 .services .card-reveal .card-title {
   margin-top: 0;
@@ -681,7 +716,6 @@ html {
     --size: 150;
   }
 }
-
 .testimonial {
   margin-top: -40px;
   position: relative;

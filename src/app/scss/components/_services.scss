@@ -28,7 +28,24 @@
   .card-reveal {
     padding-top: 1rem;
     padding-bottom: 0;
-    scrollbar-base-color: red;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(173, 32, 32);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      position: absolute;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--primary-color);
+    }
 
     .card-title {
       margin-top: 0;
