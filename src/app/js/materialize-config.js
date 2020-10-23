@@ -29,3 +29,6 @@ M.ScrollSpy.init(scrollspy, {
   throttle: 200,
   scrollOffset: 0
 })
+const hero = document.getElementById('hero')
+M.ScrollSpy.init(hero)
+console.log(scrollspy);

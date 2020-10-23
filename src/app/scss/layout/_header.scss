@@ -1,7 +1,15 @@
 .header {
   
-  nav {
-    position: absolute;
+  .navbar {
+    position: fixed;
+    top: 0;
+    background-color: hsla(352, 60%, 49%, 0.5);
+    z-index: 100;
+    transition: top 0.5s, background-color .5s;
+
+    @include media('>=tablet') {
+      // position: absolute;
+    }
   }
 
   &__logo {
@@ -20,13 +28,26 @@
 
   .sidenav {
     background-color: var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
     li {
       border-bottom: 1px solid darken($color: $primary-color, $amount: 10%)!important;
+      // border-bottom: 1px solid white;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     
-    a {
+    a.important {
       color: white;
+      font-size: 1.5rem;
+      height: auto;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
   }
 }

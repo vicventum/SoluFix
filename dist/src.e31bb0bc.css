@@ -16,6 +16,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400,700&display=swap");
 :root {
   --primary-color: #ff1744;
+  --primary-transparent: hsla(348, 100%, 55%, .9);
 }
 
 /********************* RESET *********************/
@@ -25,11 +26,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-.cards .card {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  scroll-behavior: smooth;
 }
 
 .m-mall-0 {
@@ -587,11 +584,17 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  .hero-background {
+    -webkit-filter: brightness(1.2) contrast(1.2);
+            filter: brightness(1.2) contrast(1.2);
+  }
+}
 .hero__container {
   width: 80%;
   height: 100%;
   margin: 0 10%;
-  padding-bottom: 7%;
+  padding-bottom: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,6 +741,8 @@ html {
     background-position: top center;
     background-size: auto 100%;
     background-repeat: no-repeat;
+    -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
   }
 }
 .some__title {
@@ -778,8 +783,14 @@ html {
   margin-bottom: 5px;
 }
 
-.header nav {
-  position: absolute;
+.header .navbar {
+  position: fixed;
+  top: 0;
+  background-color: rgba(200, 50, 70, 0.5);
+  z-index: 100;
+  -webkit-transition: top 0.5s, background-color 0.5s;
+  -o-transition: top 0.5s, background-color 0.5s;
+  transition: top 0.5s, background-color 0.5s;
 }
 .header__logo {
   --size: 40px;
@@ -797,12 +808,37 @@ html {
 }
 .header .sidenav {
   background-color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .header .sidenav li {
   border-bottom: 1px solid #e3002c !important;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.header .sidenav a {
+.header .sidenav a.important {
   color: white;
+  font-size: 1.5rem;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .footer__social {

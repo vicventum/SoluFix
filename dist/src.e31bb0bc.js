@@ -6377,8 +6377,27 @@ M.ScrollSpy.init(scrollspy, {
   throttle: 200,
   scrollOffset: 0
 });
+var hero = document.getElementById('hero');
+M.ScrollSpy.init(hero);
+console.log(scrollspy);
 },{}],"app/js/app.js":[function(require,module,exports) {
+var navbarPosition = window.pageYOffset;
+var navbar = document.getElementById('navbar');
+addEventListener('scroll', function () {
+  var currentScroll = window.pageYOffset;
+  if (currentScroll > 500) toggleNav(currentScroll);
+});
 
+function toggleNav(currentScroll) {
+  // Show Navbar
+  if (navbarPosition >= currentScroll) {
+    navbar.style.top = '0';
+  } else //Hide navbar
+    navbar.style.top = '-100px';
+
+  if (navbarPosition < 600) navbar.style.backgroundColor = 'hsla(348, 100%, 55%, .4)';else navbar.style.backgroundColor = 'hsla(348, 100%, 55%, .8)';
+  navbarPosition = currentScroll;
+}
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -6419,7 +6438,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55509" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64084" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
