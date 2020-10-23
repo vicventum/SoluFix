@@ -3,7 +3,7 @@ M.AutoInit()
 // Carousel Img
 const carouselImg = document.getElementById('carouselImg');
 M.Carousel.init(carouselImg, {
-  height: 510,
+  height: 590,
 })
 
 

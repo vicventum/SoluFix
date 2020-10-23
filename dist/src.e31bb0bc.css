@@ -707,7 +707,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 30px;
 }
 .carousel-item {
-  --size: 0;
+  --size: 50;
   width: calc((200 + var(--size)) * 1px ) !important;
   margin-top: calc(-0.5px * var(--size)) !important;
 }

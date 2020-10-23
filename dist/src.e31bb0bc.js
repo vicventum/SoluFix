@@ -6355,7 +6355,7 @@ M.AutoInit(); // Carousel Img
 
 var carouselImg = document.getElementById('carouselImg');
 M.Carousel.init(carouselImg, {
-  height: 510
+  height: 590
 }); // Carousel Slider
 
 var carouselSlider = document.getElementById('carouselSlider');
