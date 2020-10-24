@@ -189,12 +189,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/scss/main.scss":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/vendor/fontello/css/fontello.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\img\\hero-bg.jpg":[["hero-bg.27531da2.jpg","assets/img/hero-bg.jpg"],"assets/img/hero-bg.jpg"],"./..\\..\\assets\\img\\about-bg.webp":[["about-bg.5ee90485.webp","assets/img/about-bg.webp"],"assets/img/about-bg.webp"],"./..\\..\\assets\\img\\where-bg.jpg":[["where-bg.fcba438b.jpg","assets/img/where-bg.jpg"],"assets/img/where-bg.jpg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/materialize-css/js/cash.js":[function(require,module,exports) {
+},{"./..\\font\\fontello.woff2":[["fontello.4bb1a50a.woff2","app/vendor/fontello/font/fontello.woff2"],"app/vendor/fontello/font/fontello.woff2"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/scss/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"../vendor/fontello/css/fontello.css":"app/vendor/fontello/css/fontello.css","./..\\..\\assets\\img\\hero-bg.jpg":[["hero-bg.27531da2.jpg","assets/img/hero-bg.jpg"],"assets/img/hero-bg.jpg"],"./..\\..\\assets\\img\\about-bg.webp":[["about-bg.5ee90485.webp","assets/img/about-bg.webp"],"assets/img/about-bg.webp"],"./..\\..\\assets\\img\\where-bg.jpg":[["where-bg.fcba438b.jpg","assets/img/where-bg.jpg"],"assets/img/where-bg.jpg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/materialize-css/js/cash.js":[function(require,module,exports) {
 /*! cash-dom 1.3.5, https://github.com/kenwheeler/cash @license MIT */
 (function (factory) {
   window.cash = factory();
@@ -3873,7 +3878,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50419" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51100" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
