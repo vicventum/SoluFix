@@ -76,7 +76,7 @@
       position: relative;
     }
 
-    $i: 1;
+    $i: 0;
     @while $i <= $num-cols {
       $perc: unquote((100 / ($num-cols / $i)) + "%");
       &.s#{$i} {
@@ -86,7 +86,7 @@
       $i: $i + 1;
     }
 
-    $i: 1;
+    $i: 0;
     @while $i <= $num-cols {
       $perc: unquote((100 / ($num-cols / $i)) + "%");
       @include grid-classes("s", $i, $perc);
@@ -95,7 +95,7 @@
 
     @media #{$medium-and-up} {
 
-      $i: 1;
+      $i: 0;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
         &.m#{$i} {
@@ -105,7 +105,7 @@
         $i: $i + 1
       }
 
-      $i: 1;
+      $i: 0;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
         @include grid-classes("m", $i, $perc);
@@ -115,7 +115,7 @@
 
     @media #{$large-and-up} {
 
-      $i: 1;
+      $i: 0;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
         &.l#{$i} {
@@ -125,7 +125,7 @@
         $i: $i + 1;
       }
 
-      $i: 1;
+      $i: 0;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
         @include grid-classes("l", $i, $perc);
@@ -135,7 +135,7 @@
 
     @media #{$extra-large-and-up} {
 
-      $i: 1;
+      $i: 0;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
         &.xl#{$i} {
@@ -145,7 +145,7 @@
         $i: $i + 1;
       }
 
-      $i: 1;
+      $i: 0;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
         @include grid-classes("xl", $i, $perc);

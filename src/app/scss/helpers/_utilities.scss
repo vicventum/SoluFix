@@ -9,7 +9,14 @@ $limit: 40;
 // Responsive -----------------------------------
 @each $sizeName, $size in $m-breakpoints {
     @media screen and (min-width: $size) {
-        .#{$sizeName}m {
+        
+        .row .col.push-#{$sizeName}0 {
+            left: 0%!important;
+        }
+        .row .col.pull-#{$sizeName}0 {
+            right: 0%!important;
+        }
+        .#{$sizeName}m {            
         
             // Clases de paddings y margins ================================================
             @for $i from 0 through $limit {
