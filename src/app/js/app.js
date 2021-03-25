@@ -15,7 +15,7 @@ function toggleNav(currentScroll) {
     navbar.style.top = '-100px'
 
   if (navbarPosition < 600) 
-  navbar.style.backgroundColor = 'hsla(348, 100%, 55%, .4)'
+    navbar.style.backgroundColor = 'hsla(348, 100%, 55%, .4)'
   else
     navbar.style.backgroundColor = 'hsla(348, 100%, 55%, .8)'
 
