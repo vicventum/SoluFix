@@ -16,4 +16,5 @@ import "../node_modules/materialize-css/js/carousel"
 // import "../node_modules/materialize-css/js/forms"
 // import "./app/js/important";
 import "./app/js/materialize-config";
+import "./app/js/scrollreveal-config";
 import "./app/js/app";

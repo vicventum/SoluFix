@@ -97,6 +97,7 @@ body::-webkit-scrollbar {
 }
 
 body {
+  overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
@@ -13264,6 +13265,9 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-blend-mode: lighten;
 }
+.about__subtitle {
+  display: inline-block;
+}
 .about__title {
   font-weight: bold;
 }
@@ -13484,7 +13488,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-transition: top 0.5s, background-color 0.5s;
   -o-transition: top 0.5s, background-color 0.5s;
   transition: top 0.5s, background-color 0.5s;
-  font-weight: bold;
+  font-weight: 400;
 }
 .header__logo {
   --size: 40px;
@@ -13533,6 +13537,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   padding-top: 1em;
   padding-bottom: 1em;
+  letter-spacing: 3px;
 }
 
 .footer__social {
