@@ -8,10 +8,31 @@ html {
     overflow-x: hidden;
 
     // font-size: 62.5%;
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    --scrollbarBG: transparent;
+    --thumbBG: var(--primary-color);
+
+    // background-color: #222;
 }
 
-.cards .card {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+  body {
+    overflow-x:hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: white;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+  }
+  
+
+// .cards .card {
+//     border-bottom-left-radius: 20px;
+//     border-bottom-right-radius: 20px;
+// }

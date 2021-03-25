@@ -1,9 +1,11 @@
-M.AutoInit()
+// Navbar
+const sidenav = document.querySelector('.sidenav');
+M.Sidenav.init(sidenav)
 
 // Carousel Img
 const carouselImg = document.getElementById('carouselImg');
 M.Carousel.init(carouselImg, {
-  height: 510,
+  height: 590,
 })
 
 
@@ -24,8 +26,11 @@ M.Slider.init(slider, {
 })
 
 // Scrollspy
-const scrollspy = document.querySelectorAll('.scrollspy')
-M.ScrollSpy.init(scrollspy, {
-  throttle: 200,
-  scrollOffset: 0
-})
+// const scrollspy = document.querySelectorAll('.scrollspy')
+// M.ScrollSpy.init(scrollspy, {
+//   throttle: 200,
+//   scrollOffset: 0
+// })
+// const hero = document.getElementById('hero')
+// M.ScrollSpy.init(hero)
+// console.log(scrollspy);

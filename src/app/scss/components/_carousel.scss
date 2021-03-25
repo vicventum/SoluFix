@@ -5,7 +5,8 @@
     margin-top: 30px;
   }
   &-item {
-    --size: 0;
+    cursor: pointer;
+    --size: 50;
     width: calc((200 + var(--size)) * 1px )!important;
     margin-top: calc(-0.5px * var(--size)) !important;
    
@@ -13,5 +14,9 @@
     @include media('>=tablet') {
       --size: 150;
     }
+  }
+
+  .carousel-item>img {
+    // width: 125%;
   }
 }

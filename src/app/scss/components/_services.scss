@@ -17,10 +17,44 @@
   }
 
   .card.small  {
-    height: 260px;
+    height: 220px;
   }
 
   .card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {
     min-height: 20%;
+    padding: 1rem;
+  }
+
+  .card-reveal {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(173, 32, 32);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      position: absolute;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--primary-color);
+    }
+
+    .card-title {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+
+      @include media('>=tablet') {
+        font-size: 1.6rem;
+      }
+    }
   }
 }
