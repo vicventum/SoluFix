@@ -64,9 +64,9 @@ sr.reveal('.blog .card', {
 
 // Footer
 // sr.reveal('.footer__link', {
-//     duration: 800,
+//     duration: 500,
 //     origin: 'bottom',
-//     distance: '20px',
+//     distance: '10px',
 //     easing: 'ease-in-out',
 //     // viewFactor: .2,
 //     interval: 100,

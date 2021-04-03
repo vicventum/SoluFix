@@ -1,6 +1,6 @@
 .hero {
+  position: relative;
   &-background {
-
     filter: brightness(1.2) contrast(1.1);
 
     position: absolute;
@@ -8,7 +8,7 @@
     top: 0;
     height: 100vh;
     width: 100vw;
-  
+
     background-color: #f6f7f7;
     background-image: url(../../assets/img/hero-bg.jpg);
     background-position: bottom center;
@@ -18,7 +18,7 @@
 
   height: 100vh;
   width: 100vw;
-  
+
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 
   &__container {
@@ -26,7 +26,6 @@
     height: 100%;
     margin: 0 10%;
     padding-bottom: 6%;
-    
 
     display: flex;
     flex-direction: column;
@@ -38,8 +37,40 @@
       font-size: 2.6em;
     }
   }
-  
+
   &__text {
     margin: 0 auto;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin: auto;
+
+    color: white;
+    font-size: 2rem;
+
+    opacity: 0;
+    animation: arrow-down 2s forwards infinite;
+    animation-delay: 2.5s;
+
+    @include media('>=tablet') {
+      bottom: 30%;
+    }
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1rem);
   }
 }

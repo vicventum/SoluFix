@@ -5501,9 +5501,9 @@ sr.reveal('.blog .card', {
   interval: 200
 }); // Footer
 // sr.reveal('.footer__link', {
-//     duration: 800,
+//     duration: 500,
 //     origin: 'bottom',
-//     distance: '20px',
+//     distance: '10px',
 //     easing: 'ease-in-out',
 //     // viewFactor: .2,
 //     interval: 100,
@@ -5591,7 +5591,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49727" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58135" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -13208,6 +13208,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero {
+  position: relative;
   height: 100vh;
   width: 100vw;
   -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
@@ -13254,7 +13255,53 @@ body::-webkit-scrollbar-thumb {
 .hero__text {
   margin: 0 auto;
 }
+.hero__icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  margin: auto;
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-animation: arrow-down 2s forwards infinite;
+          animation: arrow-down 2s forwards infinite;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+@media (min-width: 600px) {
+  .hero__icon {
+    bottom: 30%;
+  }
+}
 
+@-webkit-keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
 .about {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(/about-bg.5ee90485.webp);
