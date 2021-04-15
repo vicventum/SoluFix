@@ -1,12 +1,13 @@
 {
   "name": "SoluFix",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "init": "parcel src/index.html src/post.html src/signin.html",
     "save-dev": "npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/plugin-transform-runtime sass postcss-modules autoprefixer ",
     "save": "npm install --save @babel/runtime core-js include-media",
+    "purgecss": "purgecss --css docs/src.a5811859.css  --content docs/*.html docs/*.js -o docs/src.a5811859.css",
     "build": "parcel build ./src/index.html --out-dir docs",
     "deploy": "firebase deploy"
   },
